@@ -8,7 +8,10 @@ Compiled for DSM 7.2 64570**
 
 The standard kernel module that comes with DSM 7.2 64570 is 2.4.3.
 
-I have not had a chance to test this yet, but ideally... Connect via one of the onboard non-AQC ports... rmmod, insmod, test... If all works, you should be able to backup /lib/modules/atlatic.ko, and replace /lib/modules/atlantic.ko.
+You have 2 options to use this module:
+
+1) Run the following either manually or via boot up task : ```rmmod atlantic ; sleep 1 ; insmod /location/atlantic.ko ; /etc/rc.network restart ;```
+2) Backup /lib/modules/atlantic.ko, and replace it with this module.
 
 This module should also let you use other brands AQC* adapters in your Synology NAS as the kernel module Synology provides is locked to their very few devices.
 
