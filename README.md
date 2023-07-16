@@ -1,4 +1,4 @@
-This is the most recent (as of this writing) kernel driver for the aquantia / marvell 2.5 / 5.0 / 10.0gbe adapters.
+This is the most recent (as of this writing) kernel driver for the aquantia / marvell 2.5 / 5.0 / 10.0 gbe adapters.
 
 This is essentially:
 
