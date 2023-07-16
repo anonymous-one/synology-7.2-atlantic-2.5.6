@@ -1,9 +1,9 @@
-This is the most recent (as of this writing) kernel driver for the aquantia / marvell 2.5/5.0/10.0gbe cards.
+This is the most recent (as of this writing) kernel driver for the aquantia / marvell 2.5 / 5.0 / 10.0gbe adapters.
 
 This is essentially:
 
 **atlantic.ko
-Version 2.5.3
+Version 2.5.6
 Compiled for DSM 7.2 64570**
 
 The stock driver that comes with DSM 7.2 64570 is 2.4.3.
