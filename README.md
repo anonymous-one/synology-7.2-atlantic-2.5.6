@@ -10,9 +10,12 @@ The standard kernel module that comes with DSM 7.2 64570 is 2.4.3.
 
 I have not had a chance to test this yet, but ideally... Connect via one of the onboard non-AQC ports... rmmod, insmod, test... If all works, you should be able to backup /lib/modules/atlatic.ko, and replace /lib/modules/atlantic.ko.
 
+This module should also let you use other brands AQC* adapters in your Synology NAS as the kernel module Synology provides is locked to their very few devices.
+
 Modinfo from the stock version:
 
-```description:    Marvell (Aquantia) Corporation(R) Network Driver
+```
+description:    Marvell (Aquantia) Corporation(R) Network Driver
 author:         Marvell
 version:        2.4.3.0
 license:        GPL v2
@@ -59,11 +62,13 @@ parm:           aq_fw_sid:Use provisioning data for this SID (array of uint)
 parm:           aq_force_host_boot:Force host boot (array of uint)
 parm:           aq_new_filters_enabled:New RX filters enable (uint)
 parm:           aq_enable_wa:Quirk bits to enable HW workarounds (int)
-parm:           aq_enable_ptp:Enable PTP (bool)```
+parm:           aq_enable_ptp:Enable PTP (bool)
+```
 
 Modinfo from this updated version:
 
-```description:    Marvell (Aquantia) Corporation(R) Network Driver
+```
+description:    Marvell (Aquantia) Corporation(R) Network Driver
 author:         Marvell
 version:        2.5.6.0
 license:        GPL v2
@@ -116,4 +121,5 @@ parm:           aq_fw_did:Use FW image for this DID (array of uint)
 parm:           aq_fw_sid:Use provisioning data for this SID (array of uint)
 parm:           aq_force_host_boot:Force host boot (array of uint)
 parm:           aq_enable_wa:Quirk bits to enable HW workarounds (int)
-parm:           aq_enable_ptp:Enable PTP (bool)```
+parm:           aq_enable_ptp:Enable PTP (bool)
+```
